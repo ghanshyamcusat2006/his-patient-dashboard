@@ -234,14 +234,4 @@
 	<br />
 	<br />
 	<br />
-	<tr>
-		<center>
-			<b>
-				<font size="2">Please Note - All follow-up appointments
-					are scheduled between 3:00 -4:00 pm everyday</font>
-			</b>
-			<br>
-			<p style="font-weight: bold;">${slipMessage}</p>
-		</center>
-	</tr>
 </table>

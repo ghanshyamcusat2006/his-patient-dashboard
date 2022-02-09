@@ -87,24 +87,13 @@
 	</tr>
 	<tr>
 		<td><strong>Gender:</strong></td>
-		<td>
-			<c:choose>
-				<c:when test="${patient.gender eq 'M'}">
-					Male
-				</c:when>
-				<c:otherwise>
-					Female
-				</c:otherwise>
-			</c:choose>
-		</td>
+		<td>${patient.gender}</td>
 		<td><strong>Age:</strong></td>
 		<td>${age}</td>
 	</tr>
 	<tr>
 		<td><strong>OPD Consulted:</strong></td>
 		<td>${opdConceptName}</td>
-		<td><strong>Encounter No:</strong></td>
-		<td>${encounterId}</td>
 	</tr>
 </table>
 
@@ -234,14 +223,4 @@
 	<br />
 	<br />
 	<br />
-	<tr>
-		<center>
-			<b>
-				<font size="2">Please Note - All follow-up appointments
-					are scheduled between 3:00 -4:00 pm everyday</font>
-			</b>
-			<br>
-			<p style="font-weight: bold;">${slipMessage}</p>
-		</center>
-	</tr>
 </table>

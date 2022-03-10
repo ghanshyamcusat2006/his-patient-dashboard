@@ -50,7 +50,7 @@
 		<td width="30%"><b>Visit Status:</b>
 		<!-- June 20th 2012 - Thai Chuong supported for issue #45 -->
 		<c:choose> 
-				<c:when test="${referredType.class.name == 'org.openmrs.ConceptName'}">
+				<c:when test="${not empty referredType}">
 					${referredType}
 				</c:when>
 				<c:otherwise>
